@@ -1,0 +1,101 @@
+/* - User Story #15: My product landing page should utilize CSS flexbox at least once. */
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    /* top: 400px; */
+}
+
+/* - User Story #13: The navbar should always be at the top of the viewport. */
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.header-img {
+    margin-left: 15px;
+}
+
+#header-img {
+    height: 200px;
+    width: 150px;
+}
+
+.header-title {
+    font-size: 50px;
+    font-family: fantasy;
+    color: #AFFCEC; 
+    text-shadow:
+        1px  1px 10px #A9A0E6,
+        1px -1px 10px #A9A0E6,
+        -1px  1px 10px #A9A0E6,
+        -1px -1px 10px #A9A0E6;
+        -webkit-text-stroke-width: .1px;
+        -webkit-text-stroke-color: #A9A0E6;
+        filter: drop-shadow(5px 5px 5px #F48BF5);
+    margin-top: auto; 
+    margin-bottom: 0;
+}
+
+#nav-bar {
+    margin-right: 15px;
+    margin-bottom: auto;
+    margin-top: 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    margin: 0px 20px 0px 20px;
+    font-size: 18px;
+    font-family: cursive;
+    list-style: none;
+    font-weight: 400;
+}
+
+a {
+    color: #B06BE0;
+    text-decoration: none;
+}
+
+
+iframe {
+    margin-top: 500px; 
+    margin-left: 15%;
+}
+
+
+/* - User Story #14: My product landing page should have at least one media query. */
+@media screen and (max-width: 414px) { 
+   
+    .header-title {
+        font-size: 18px;
+        width: 50%;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    ul {
+        padding: 0;
+    }
+    
+    li {
+        margin: 0px 5px 0px 5px;
+        font-size: 10px;       
+    }
+   
+}
+
